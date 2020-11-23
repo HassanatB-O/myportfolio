@@ -2,11 +2,8 @@
     margin: 0;
     font-family: 'Times New Roman', Times, serif;
 }
-h1, h2, h3, p{
+h1, h2, p{
     text-transform: capitalize;
-}
-h3{
-    font-size: 20px;
 }
 nav{
     background-color: black;
@@ -17,7 +14,7 @@ nav{
     position: fixed;
     width: 100%;
 }
-h3:hover{
+h2:hover{
     animation-name: hover;
     animation-duration: 5s;
 }
