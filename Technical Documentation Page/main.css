@@ -1,0 +1,28 @@
+header{
+    text-transform: capitalize;
+    font-size: 30px;
+}
+.nav-bar{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: black;
+    padding: 10px;
+    border: 2px solid gainsboro;
+}
+a{
+    font-weight: bold;
+    color: wheat;
+}
+code{
+    background-color: gainsboro;
+    display: block;
+}
+@media(max-width: 750px){
+    #navbar{
+        text-align: left;
+        visibility: visible;
+    }
+    a{
+        text-align: left;
+    }
+}

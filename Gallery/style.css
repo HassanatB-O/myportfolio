@@ -1,0 +1,36 @@
+body
+{
+    background-color: black;
+}
+h1
+{
+    text-align: center;
+    font-size: 40px;
+    font-family: cursive;
+    color: white;
+    background-color: lawngreen;
+}
+.row{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    text-align: center;
+}
+@media screen and (min-width: 600px) {
+    .row{
+        flex-direction: row;        
+    }
+}
+.responsive
+{
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+footer
+{
+    text-align: center;
+    color: lawngreen;
+    font-size: 20px;
+    font-weight: bold;
+}
