@@ -154,15 +154,8 @@ img{
     #welcome-section{
         height: 350px;
     }
-    .project-tile{
-        flex-direction: column-reverse;
-    }
-    #projects{
-        text-align: center;
-    }
     img{
         width: 50%;
-        align-self: center;
     }
     nav{
         display: flex;
@@ -174,14 +167,15 @@ img{
     }
     .text{
         display: block;
-        width: 100%;
-        margin-left: 0;
+        width: 50%;
+        margin-left: 6%;
     }
     .txt{
         color: black;
+        font-size: 18px;
     }
     h3{
-        font-size: 25px;
+        font-size: 22px;
     }
 }
 @media (min-width: 300px) and (max-width: 399px){
@@ -194,18 +188,21 @@ img{
     }
     .text{
         display: block;
-        width: 100%;
-        margin-left: 0;
+        width: 50%;
+        margin-left: 5%;
     }
+    a > p{
+        font-size: 17px;
+    } 
     .txt{
         color: black;
+        font-size: 15px;
     }
     h3{
-        font-size: 22px;
+        font-size: 20px;
     }
     img{
         width: 50%;
-        align-self: center;
     }
     nav{
         display: flex;
@@ -214,11 +211,5 @@ img{
     nav a{
         margin-left: 0;
         font-size: 20px;
-    }
-    .project-tile{
-        flex-direction: column-reverse;
-    }
-    #projects{
-        text-align: center;
     }
 }
