@@ -180,7 +180,7 @@ button
         margin-bottom: 00px;
     }
 }
-@media (min-width: 300px) and (max-device-width: 480px) {
+@media (min-width: 300px) and (max-width: 480px) {
     .container{
         flex-direction: column-reverse;
         width: 100%;  
