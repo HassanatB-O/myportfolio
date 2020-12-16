@@ -20,7 +20,7 @@ h2{
 }
 h3{
     font-size: 27px;
-    color: teal;
+    color: black;
     text-transform: uppercase;
 }
 a > p{
@@ -176,6 +176,9 @@ img{
     }
     h3{
         font-size: 22px;
+    }    
+    a > p{
+        font-size: 20px;
     }
 }
 @media (min-width: 300px) and (max-width: 399px){
