@@ -17,7 +17,7 @@ nav
     display: flex;
     justify-content: space-between;
     position: fixed;  
-    margin-left: 40%;
+    margin-left: 47%;
     margin-top: 20px;
 }
 nav .logo
@@ -109,81 +109,128 @@ button
     cursor: pointer;
     color: hsl(231, 7%, 65%);
 }
-@media screen and (max-device-width: 480px) {
-    .flexcontainer{
+
+@media (min-width: 777px) and (max-width: 1024px)
+{
+    input[type=checkbox]{
+        display: none;
+    }
+    nav ul{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 50%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    nav .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+    }
+    #chk1:checked~ul{
+        right: 0;
+        margin-bottom: 100px;
+    }
+    .LOGO{
+        margin-top: 35px;
+        margin-left: 15px;
+    }
+}
+@media (min-width: 481px) and (max-width: 776px){
+    .container{
+        flex-direction: column-reverse;
+    }
+    img{
+        width: 70%;
+        align-self: center;
+    }
+    nav{
+        margin-left: 30%;
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    nav ul{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 50%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    nav .menu{
+        display: block;
+        width: 100px;
+        float: right;
+        text-align: center;
+        margin-right: -30%;
+    }
+    #chk1:checked~ul{
+        right: 0;
+        margin-bottom: 00px;
+    }
+}
+@media (min-width: 300px) and (max-device-width: 480px) {
+    .container{
         flex-direction: column-reverse;
         width: 100%;  
         margin: 0 auto;
-}
-.text
-{
-    margin-top: 50px;
-    text-align: center;
-}
-.LOGO
-{
-    margin-top: 35px;
-    margin-left: 15px;
-}
-button
-{
-    text-align: center;
-    margin-right: 15px;
-}
-img
-{
-    width: 100%;
-    margin-top: 40px;
-    align-items: center;
-}
-}
-@media (max-width: 1000px)
-{
-    input[type=checkbox]
-    {
-        display: none;
     }
-    nav ul
-{
-    position: fixed;
-    top: 100px;
-    right: -100%;
-    width: 50%;
-    background: whitesmoke;
-    height: calc(100vh - 100px);
-    flex-direction: column;
-    align-items: center;
-    transition: right 0.5s linear;
-}
-nav .menu
-{
-    display: block;
-    width: 100px;
-    text-align: center;
-}
-#chk1:checked~ul
-{
-    right: 0;
-    margin-bottom: 100px;
-}
-.LOGO
-{
-    margin-top: 35px;
-    margin-left: 15px;
-}
-}
-@media (max-width: 500px)
-{
-    nav.logo
-    {
+    .text{
+        margin-top: 50px;
+        text-align: center;
+    }
+    .LOGO{
+        margin-top: 35px;
+        margin-left: 15px;
+    }
+    button{
+        text-align: center;
+        margin-right: 15px;
+    }
+    img{
+        width: 100%;
+        margin-top: 40px;
+        align-items: center;
+    }
+    nav.logo{
         margin-left: 10px;
     }
-    nav.ul
-    {
+    nav.ul{
         width: 100%;
     }
-    input[type=checkbox]
-    {
+    input[type=checkbox]{
         display: none;
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    nav ul{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 50%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    nav .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+        margin-top: 12px;
+    }
+    #chk1:checked~ul{
+        right: 0;
+        margin-bottom: 100px;
     }
 }
