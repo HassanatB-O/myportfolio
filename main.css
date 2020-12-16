@@ -54,7 +54,6 @@ nav a{
 nav{
     background-color: black;
     padding: 7px;
-    box-shadow: 0 10px 20px rgba(20, 15, 0, 5.19);
     position: fixed;
     width: 100%;
 }
