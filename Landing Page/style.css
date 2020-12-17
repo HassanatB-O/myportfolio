@@ -212,9 +212,6 @@ button
     input[type=checkbox]{
         display: none;
     }
-    input[type=checkbox]{
-        display: none;
-    }
     nav ul{
         position: fixed;
         top: 100px;
