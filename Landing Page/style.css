@@ -189,6 +189,8 @@ button
     .text{
         margin-top: 50px;
         text-align: center;
+        width: 100%;
+        line-height: 33px;
     }
     .LOGO{
         margin-top: 35px;
@@ -228,6 +230,62 @@ button
         width: 100px;
         text-align: center;
         margin-top: 12px;
+    }
+    #chk1:checked~ul{
+        right: 0;
+        margin-bottom: 100px;
+    }
+}
+@media (min-width: 200px) and (max-width: 349px){
+    .container{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0 auto;
+     }
+     .text{
+        margin-top: 50px;
+        text-align: center;
+        width: 100%;
+    }
+    .LOGO{
+        margin-top: 35px;
+        margin-left: 15px;
+    }
+    button{
+        text-align: center;
+        margin-right: 15px;
+    }
+    img{
+        width: 100%;
+        margin-top: 40px;
+        align-items: center;
+    }
+    nav.logo{
+        margin-left: 10px;
+    }
+    nav.ul{
+        width: 100%;
+    }
+    input[type=checkbox]{
+        display: none;
+    }
+    nav ul{
+        position: fixed;
+        top: 100px;
+        right: -100%;
+        width: 50%;
+        background: whitesmoke;
+        height: calc(100vh - 100px);
+        flex-direction: column;
+        align-items: center;
+        transition: right 0.5s linear;
+    }
+    nav .menu{
+        display: block;
+        width: 100px;
+        text-align: center;
+        margin-top: 12px;
+        margin-right: 0;
     }
     #chk1:checked~ul{
         right: 0;
