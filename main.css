@@ -62,18 +62,18 @@ nav a{
 }
 h1{
     animation: move 3s;
+    position: relative;
 }
 h5{
     animation: move 5s;
+    position: relative;
 }
 @keyframes move{
     from{
-        margin-left: 100%;
-        width: 300%;
+        right: 100vw;
     }
     to{
-        margin-left: 0%;
-        width: 100%;
+        right: 0;
     }
 }
 section#text{
