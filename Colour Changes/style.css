@@ -1,0 +1,30 @@
+body{
+    text-align: center;
+}
+button
+{
+    border: none;
+    border-radius: 12px;
+    padding: 20px;
+    margin-top: 20%;
+    background-color: rosybrown;
+    width: 150px;
+    font-size: 25px;
+    font-weight: bold;
+}
+p
+{
+    text-align: center;
+    font-size: 22px;
+    margin-top: 340px;
+}
+@media only screen and (max-width: 1000px)
+{
+   body{
+       text-align: center;
+   }
+    button
+   {
+       margin-top: 300px;
+   } 
+}
