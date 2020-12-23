@@ -22,22 +22,19 @@ footer
 {
     body
     {   
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-top: 50%;
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       margin-top: 50%;
+       text-align: center;
     }
-    button
-    {
-        margin-left: 42%;
-    }
-
 }
 @media only screen and (max-width: 900px)
 {
     body
     {
         margin-top: 35%;
+        text--align: center;
     }
     footer
     {
