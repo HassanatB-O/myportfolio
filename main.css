@@ -1,6 +1,11 @@
 *{
     margin: 0;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+img.svg{
+    color: white;
+    height: 50px;
+    width: 50px;
 }
 body{
     background-color: white;
@@ -117,14 +122,11 @@ a:visited{
     margin-top: 20px; 
 }
 #links{
-    background-color: black;
+    background-color: orangered;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
     margin: 8px;
-}
-#links p{
-    color: white;
 }
 img{
     max-width: 100%;
