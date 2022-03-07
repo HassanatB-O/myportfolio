@@ -13,14 +13,7 @@ body{
 }
 h1, h4{
     font-size: 35px;
-    color: whitesmoke;
     text-align: center;
-    text-transform: capitalize;
-}
-h2{
-    font-size: 25px;
-    font-family: monospace;
-    color: gray;
     text-transform: capitalize;
 }
 h3{
@@ -57,21 +50,23 @@ nav a{
     line-height: 25px;
 }
 nav{
-    background-color: black;
+    background-color: orangered;
     padding: 7px;
     position: fixed;
     width: 100%;
 }
 nav a{
-    color: white;
+    color: black;
 }
 h1{
     animation: move 3s;
     position: relative;
+    color: black;
 }
 h5{
     animation: move 5s;
     position: relative;
+    color: black;
 }
 @keyframes move{
     from{
@@ -89,10 +84,13 @@ section#text{
 }
 #welcome-section{
     text-align: center;
-    background-color: black;
+    background-color: orangered;
     height: 300px;
     line-height: 50px;
     width: 100%;
+}
+#navbar a{
+    color: black;
 }
 a{
     font-size: 22px;
@@ -141,14 +139,18 @@ img{
         width: 40%;
     }
     #links{
-        flex-direction: column;
+        flex-direction: row;
         text-align: center;
     }
 }
 @media (min-width: 400px) and (max-width: 600px){
     #links{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+    }
+    img.svg{
+        height: 30px;
+        width: 30px;
     }
     #welcome-section{
         height: 350px;
@@ -182,9 +184,13 @@ img{
 }
 @media (min-width: 300px) and (max-width: 399px){
     #links{
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
-    }    
+    }   
+    img.svg{
+        height: 30px;
+        width: 30px;
+    } 
     #welcome-section{
         height: 400px;
     }
