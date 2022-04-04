@@ -1,6 +1,5 @@
 *{
     margin: 0;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 img.svg{
     color: white;
@@ -8,7 +7,8 @@ img.svg{
     width: 50px;
 }
 body{
-    background-color: white;
+    background-color: #23252C;
+    font-family: Inter, sans-serif;
 
 }
 h1, h4{
@@ -18,30 +18,36 @@ h1, h4{
 }
 h3{
     font-size: 27px;
-    color: black;
+    color: #F5F5F5;
     text-transform: uppercase;
 }
 a > p{
     text-decoration: underline;
-    color: orangered;
+    color: #F3BF99;
     display: block;
     text-transform: uppercase;
+}
+.nav-img{
+    border-radius: 50%;
+    height: 70px;
+    width: 70px;
 }
 h5{
     font-size: 22px;
 }
 h4{
-    color: black;
+    color: #F3BF99;
 }
 nav a{
     float: right;
+    text-decoration: none;
     margin-left: 30px;
     text-align: left;
     padding: 0 20px;
     z-index: 5;
 }
 .text{
-    color: black;
+    color: #F5F5F5;
     display: flex;
     flex-direction: column;
     height: auto;
@@ -50,23 +56,23 @@ nav a{
     line-height: 25px;
 }
 nav{
-    background-color: orangered;
+    background-color: #161619;
     padding: 7px;
     position: fixed;
     width: 100%;
 }
 nav a{
-    color: black;
+    color: #F5F5F5;
 }
 h1{
     animation: move 3s;
     position: relative;
-    color: white;
+    color: #F5F5F5;
 }
 h5{
     animation: move 5s;
     position: relative;
-    color: white;
+    color: #F5F5F5;
 }
 @keyframes move{
     from{
@@ -76,21 +82,34 @@ h5{
         right: 0;
     }
 }
+::-webkit-scrollbar{
+    width: 10px;
+    padding: 3px;
+}
+::-webkit-scrollbar-track{
+    background: #23252C;
+}
+::-webkit-scrollbar-thumb{
+    background: #D5D4D8;
+    border-radius: 5px;
+    height: 3px;
+    cursor: pointer;
+}
 section#text{
     position: relative;
     top: 100px;
-    color: white;
+    color: #F5F5F5;
     font-size: 22px;
 }
 #welcome-section{
     text-align: center;
-    background-color: black;
+    background-color: #161619;
     height: 300px;
     line-height: 50px;
     width: 100%;
 }
 #navbar a{
-    color: black;
+    color: #F5F5F5;
 }
 a{
     font-size: 22px;
@@ -99,15 +118,6 @@ a{
 p{
     font-size: 20px;
     font-weight: bold;
-}
-a:link{
-    color: white;
-}
-a:hover{
-    color: orangered;
-}
-a:visited{
-    color: white;
 }
 .project-tile{
     padding: 10px;
@@ -120,11 +130,13 @@ a:visited{
     margin-top: 20px; 
 }
 #links{
-    background-color: orangered;
+    background-color: #D5D4D8;
     padding: 10px;
     display: flex;
     justify-content: space-evenly;
     margin: 8px;
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
 }
 img{
     max-width: 100%;
