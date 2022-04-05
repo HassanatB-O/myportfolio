@@ -25,15 +25,15 @@ a > p{
     text-decoration: underline;
     color: #F3BF99;
     display: block;
-    text-transform: uppercase;
-}
-.nav-img{
-    border-radius: 50%;
-    height: 70px;
-    width: 70px;
+    text-transform: uppercase;    
+    font-size: 20px;
+    font-weight: bold;
 }
 h5{
     font-size: 22px;
+    animation: move 5s;
+    position: relative;
+    color: #F5F5F5;
 }
 h4{
     color: #F3BF99;
@@ -61,16 +61,8 @@ nav{
     position: fixed;
     width: 100%;
 }
-nav a{
-    color: #F5F5F5;
-}
 h1{
     animation: move 3s;
-    position: relative;
-    color: #F5F5F5;
-}
-h5{
-    animation: move 5s;
     position: relative;
     color: #F5F5F5;
 }
@@ -109,15 +101,9 @@ section#text{
     width: 100%;
 }
 #navbar a{
-    color: #F5F5F5;
-}
-a{
+    color: #FFFFFF;
     font-size: 22px;
     cursor: pointer;
-}
-p{
-    font-size: 20px;
-    font-weight: bold;
 }
 .project-tile{
     padding: 10px;
@@ -153,6 +139,9 @@ img{
         flex-direction: row;
         text-align: center;
     }
+    #welcome-section{
+        height: 400px;
+    }
 }
 @media (min-width: 400px) and (max-width: 600px){
     #links{
@@ -175,7 +164,7 @@ img{
     }
     nav a{
         margin-left: 0;
-        font-size: 20px;
+        font-size: 15px;
     }
     .text{
         display: block;
@@ -183,13 +172,19 @@ img{
         margin-left: 6%;
     }
     .txt{
-        color: black;
+        color: #DEEBF8;
         font-size: 18px;
     }
     h3{
         font-size: 22px;
     }
     a > p{
+        font-size: 20px;
+    }
+    h1{
+        font-size: 27px;
+    }
+    h5{
         font-size: 20px;
     }
 }
@@ -203,7 +198,9 @@ img{
         width: 30px;
     } 
     #welcome-section{
-        height: 400px;
+        height: 450px;
+        width: 100%;
+        box-sizing: border-box;
     }
     .text{
         display: block;
@@ -214,7 +211,7 @@ img{
         font-size: 17px;
     } 
     .txt{
-        color: #DEEBF8;
+        color: black;
         font-size: 15px;
     }
     h3{
@@ -229,6 +226,12 @@ img{
     }
     nav a{
         margin-left: 0;
-        font-size: 20px;
+        font-size: 15px;
+    }
+    h1{
+        font-size: 25px;
+    }
+    h5{
+        font-size: 17px;
     }
 }
