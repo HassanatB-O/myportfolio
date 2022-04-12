@@ -3,46 +3,50 @@ h1{
     margin: 0;
     font-weight: 800;
     letter-spacing: 20px;
-    background: url(Road.JPG) center no-repeat;
-    -webkit-text-fill-color: transparent; 
-    -webkit-background-clip: text;
+    color: #F55A5A;
 }
-h2{
-    font-style: italic;
-    color: white;
+h2, p{
+    background-color: black;
+    border-radius: 3px;
+    font-weight: 700;
+    display: inline-block;
 }
 body{
-    font-family: "montserrat", sans-serif;
-    background: linear-gradient(to right, #2C8396, #2C3040);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-image: url("bk.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     overflow: hidden;
 }
 .contain{
     width: 100%;
-    color: #119F4A;
+    color: #918E9B;
     top: 50%;
     position: absolute;
     transform: translateY(-50%);
     text-align: center;
 }
 .contain p{
-    text-transform: uppercase;
-    font-size: 30px;
-    font-style: italic;
-    font-weight: 700;
-    color: white;
+    text-transform: capitalize;
+    font-size: 20px;
+    font-weight: bold;
 }
 button{
     border: none;
-    color: #2C3040;
-    border-radius: 5px;
+    background: #F55A5A;
+    border-radius: 8px;
     width: 200px;
+    text-transform: uppercase;
+    color: white;
     padding: 10px;
     font-size: 25px;
     cursor: pointer;
 }
 @media only screen and (max-width: 1024px){
     body{
-        overflow-x: hidden;
+        overflow-y: auto;
+        margin: 0;
+        padding: 0;
     }
     h1{
         font-size: 150px;
