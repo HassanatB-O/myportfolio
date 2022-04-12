@@ -8,4 +8,17 @@ function calculate()
     //this is to do the calculation invloved to get the body mass index
     calculation = (weight)/((height*height)/10000);
     document.getElementById('category').innerHTML = calculation;
+
+    if (calculation <= 18.4){
+        document.getElementById('category').textContent = `Your BMI is ${calculation}, therefore you are Underweight`
+    }
+    else if(calculation  <= 24.9){
+        document.getElementById('category').textContent = `Your BMI is ${calculation}, therefore you are Healthy`
+    }
+    else if(calculation <= 29.9){
+        document.getElementById('category').textContent = `Your BMI is ${calculation}, therefore you are Overweight`
+    }
+    else if (calculation >= 30){
+        document.getElementById('category').textContent = `Your BMI is ${calculation}, therefore you are Obese`
+    }
         }
