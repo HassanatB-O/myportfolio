@@ -5,6 +5,7 @@
 img.svg{
     height: 40px;
     width: 40px;
+    box-shadow: none;
 }
 body{
     background-color: #23252C;
@@ -21,7 +22,7 @@ h3{
 }
 a > p{
     text-decoration: underline;
-    color: #F3BF99;
+    color: #FFFFFF;
     display: block;
     text-transform: uppercase;    
     font-size: 20px;
@@ -35,7 +36,7 @@ h5{
     color: #F5F5F5;
 }
 h4{
-    color: #F3BF99;
+    color: #FFFFFF;
 }
 nav a{
     float: right;
@@ -56,11 +57,16 @@ nav a{
     margin-left: 10%;
     line-height: 25px;
 }
+.txt{
+    color: hsl(179, 79%, 29%);
+    margin-top: 8px;
+}
 nav{
     background-color: #161619;
     padding: 7px;
     position: fixed;
     width: 100%;
+    padding: 1rem;
 }
 h1{
     animation: move 3s;
@@ -68,11 +74,11 @@ h1{
     color: #F5F5F5;
 }
 @keyframes move{
-    from{
-        right: 100vw;
+    100%{
+        left: 0;
     }
-    to{
-        right: 0;
+    100%{
+        left: 0;
     }
 }
 ::-webkit-scrollbar{
@@ -99,7 +105,7 @@ section#text{
     background-color: #161619;
     height: 300px;
     line-height: 50px;
-    width: 100%;
+    padding: 1rem 2rem;
 }
 #navbar a{
     color: #FFFFFF;
@@ -128,6 +134,8 @@ img{
     max-width: 100%;
     width: 30%;
     margin-top: 10px;
+    border-radius: 8px;
+    box-shadow: 1px 1px 6px 2px #43454f;
 }
 @media (min-width: 601px) and (max-width: 1024px){
     #projects{
@@ -162,10 +170,11 @@ img{
     nav{
         display: flex;
         justify-content: space-evenly;
+        font-size: .85rem;
     }
-    nav a{
+    #navbar a{
         margin-left: 0;
-        font-size: 15px;
+        font-size: 18px;
     }
     .text{
         display: block;
@@ -173,11 +182,11 @@ img{
         margin-left: 6%;
     }
     .txt{
-        color: #DEEBF8;
         font-size: 18px;
     }
     h3{
         font-size: 22px;
+        text-align: left;
     }
     a > p{
         font-size: 20px;
@@ -200,7 +209,6 @@ img{
     } 
     #welcome-section{
         height: 450px;
-        width: 100%;
         box-sizing: border-box;
     }
     .text{
@@ -212,11 +220,11 @@ img{
         font-size: 17px;
     } 
     .txt{
-        color: black;
         font-size: 15px;
     }
     h3{
         font-size: 20px;
+        text-align: left;
     }
     img{
         width: 50%;
@@ -225,7 +233,7 @@ img{
         display: flex;
         justify-content: space-evenly;
     }
-    nav a{
+    #navbar a{
         margin-left: 0;
         font-size: 15px;
     }
